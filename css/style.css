@@ -7,6 +7,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
 header {
@@ -16,10 +17,11 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 200px;
+  padding: 30px 200px;
   background-color: var(--blue);
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 header .header__logo {
@@ -29,6 +31,7 @@ header .header__logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 header nav ul {
@@ -40,5 +43,83 @@ header nav ul {
 
 header nav ul li {
   padding: 0 50px;
+}
+
+header nav ul li p {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+header nav ul li p::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  bottom: -10px;
+  background-color: red;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+header nav ul li p:hover::before {
+  width: 100%;
+}
+
+main {
+  background-color: #e4E7e9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .panel {
+  background-color: #fff;
+  max-width: 90%;
+  width: 90%;
+  margin: 50px 0;
+  text-align: center;
+}
+
+main .panel .panel__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+  background-color: purple;
+}
+
+main .panel .panel__info .big-checkmark {
+  font-size: 200px;
+  color: red;
+}
+
+main .panel .panel__info h1 {
+  font-size: 100px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+main .panel .panel__info .list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .panel .panel__info .list-item .small-checkmark {
+  color: green;
 }
 /*# sourceMappingURL=style.css.map */

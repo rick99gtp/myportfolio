@@ -1,0 +1,41 @@
+main {
+    background-color: #e4E7e9;
+    display: flex;
+    justify-content: center;
+
+    .panel {
+        background-color: #fff;
+        max-width: 90%;
+        width: 90%;
+        margin: 50px 0;
+        text-align: center;
+
+        .panel__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            background-color: purple;
+
+            .big-checkmark {
+                font-size: 200px;
+                color: red;
+            }
+
+            h1 {
+                font-size: 100px;
+                font-weight: 400;
+                letter-spacing: 4px;
+            }
+
+            .list-item {
+                display: flex;
+
+                .small-checkmark {
+                    color: green;
+                }
+            }
+        }
+    }
+}
