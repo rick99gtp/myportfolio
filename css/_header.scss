@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 200px;
+    background-color: var(--blue);
+    color: #fff;
+    font-size: 24px;
+
+    .header__logo {
+        display: flex;
+            align-items: center;
+    }
+
+    nav {
+
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                padding: 0 50px;
+            }
+        }
+    }
+}
