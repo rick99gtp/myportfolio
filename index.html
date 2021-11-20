@@ -21,8 +21,10 @@
         </div>
         <nav>
             <ul>
-                <li id="getstarted">
-                    <p>Get Started</p>
+                <li>
+                    <div id="getstarted" class="header-btn">
+                        Get Started
+                    </div>
                 </li>
                 <li id="pricing">
                     <p>Pricing</p>
@@ -35,32 +37,87 @@
     </header>
 
     <main>
-        <div class="panel">
+        <!-- Main Website -->
+        <div class="main-website">
+            <div class="info__container">
+                <div class="info__container--info">
+                    <h1>Create your portfolio in less than 10 minutes.</h1>
+                    <div class="main-btn">Get Started</div>
+                </div>
+                <div class="info__container-img">
+                    <img src="images/temp-main.jpg">
+                </div>
+            </div>
+
+            <div class="in-between">
+                <h2>The process is really simple.</h2>
+            </div>
+
+            <div class="info__container info-reverse">
+                <div class="info__container--info">
+                    <h2>Answer a few questions.</h2>
+                </div>
+                <div class="info__container-img">
+                    <img src="images/temp-main.jpg">
+                </div>
+            </div>
+
+            <div class="info__container">
+                <div class="info__container--info">
+                    <h2>Choose from over 20 templates.</h2>
+                </div>
+                <div class="info__container-img">
+                    <img src="images/temp-main.jpg">
+                </div>
+            </div>
+
+            <div class="info__container info-reverse">
+                <div class="info__container--info">
+                    <h2>Download your files for just $20.</h2>
+                    <div class="btn">What am I getting for $20?</div>
+                </div>
+                <div class="info__container-img">
+                    <img src="images/temp-files.jpg">
+                </div>
+            </div>
+
+            <div class="info__container">
+                <div class="info__container--info">
+                    <h2>Upload these files to your hosting server and you're all set!</h2>
+                </div>
+                <div class="info__container-img">
+                    <img src="images/temp-main.jpg">
+                </div>
+            </div>
+
+            <footer>
+                <p class="footer">Copyright &#169; <span id="year"></span>. All rights reserved.</p>
+            </footer>
+        </div>
+
+        <!-- Hello panel -->
+        <div id="hello-panel" class="panel">
             <div class="panel__info">
                 <i class="fas fa-check-circle big-checkmark"></i>
                 <h1>Hello</h1>
-                <p>First, let's gather some information.</p>
-                <div class="list-item">
+                <h2>First, let's gather some information.</h2>
+                <div class="list-grid__container">
                     <i class="fas fa-check small-checkmark"></i>
                     <p>your name</p>
-                </div>
-                <div class="list-item">
                     <i class="fas fa-check small-checkmark"></i>
                     <p>your position</p>
-                </div>
-                <div class="list-item">
                     <i class="fas fa-check small-checkmark"></i>
                     <p>your skills</p>
-                </div>
-                <div class="list-item">
                     <i class="fas fa-check small-checkmark"></i>
                     <p>your projects</p>
                 </div>
-                <p>Sound good?</p>
-                <button>Next</button>
+                <p class="sounds-good">Sound good?</p>
+                <div class="btn next">Next</div>
             </div>
         </div>
     </main>
+
+    <script defer src="js/index.js"></script>
 </body>
 
 </html>

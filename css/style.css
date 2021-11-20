@@ -39,6 +39,9 @@ header nav ul {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header nav ul li {
@@ -66,6 +69,21 @@ header nav ul li p:hover::before {
   width: 100%;
 }
 
+header nav ul li .header-btn {
+  padding: 20px 40px;
+  cursor: pointer;
+  background-color: green;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 8px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+header nav ul li .header-btn:hover {
+  background: #009100;
+}
+
 main {
   background-color: #e4E7e9;
   display: -webkit-box;
@@ -76,12 +94,32 @@ main {
           justify-content: center;
 }
 
+main .btn {
+  padding: 20px 100px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: green;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 8px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
 main .panel {
   background-color: #fff;
   max-width: 90%;
   width: 90%;
   margin: 50px 0;
   text-align: center;
+}
+
+main .panel p {
+  color: #aaa;
+}
+
+main .panel#hello-panel {
+  display: none;
 }
 
 main .panel .panel__info {
@@ -98,8 +136,7 @@ main .panel .panel__info {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px;
-  background-color: purple;
+  padding: 80px;
 }
 
 main .panel .panel__info .big-checkmark {
@@ -111,15 +148,119 @@ main .panel .panel__info h1 {
   font-size: 100px;
   font-weight: 400;
   letter-spacing: 4px;
+  padding: 10px 0;
 }
 
-main .panel .panel__info .list-item {
+main .panel .panel__info h2 {
+  font-size: 24px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+main .panel .panel__info .list-grid__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+}
+
+main .panel .panel__info .list-grid__container .small-checkmark {
+  color: green;
+  font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-main .panel .panel__info .list-item .small-checkmark {
-  color: green;
+main .panel .panel__info .list-grid__container p {
+  font-size: 1.25rem;
+  text-align: left;
+  padding: 10px 0 0 3px;
+}
+
+main .panel .sounds-good {
+  padding: 20px 0 10px;
+  font-size: 1.25rem;
+}
+
+.main-website {
+  height: 90vh;
+  width: 100vw;
+  background: #fff;
+}
+
+.main-website .info__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-website .info__container .info__container--info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.main-website .info__container .info__container--info h1 {
+  font-size: 4rem;
+  width: 70%;
+}
+
+.main-website .info__container .info__container--info .main-btn {
+  background-color: green;
+  color: #fff;
+  padding: 20px 40px;
+  width: 20%;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.main-website .info__container .info__container-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+.main-website .info__container .info__container-img img {
+  width: 100%;
+  height: auto;
+  max-width: 750px;
+}
+
+.main-website .info-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.main-website .in-between {
+  text-align: center;
+  font-size: 2rem;
+  margin: 40px 0;
 }
 /*# sourceMappingURL=style.css.map */

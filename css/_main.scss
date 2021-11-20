@@ -3,6 +3,21 @@ main {
     display: flex;
     justify-content: center;
 
+    .btn {
+        padding: 20px 100px;
+        margin-top: 20px;
+        cursor: pointer;
+        background-color: green;
+        color: #fff;
+        font-size: 20px;
+        border-radius: 8px;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            
+        }
+    }
+
     .panel {
         background-color: #fff;
         max-width: 90%;
@@ -10,13 +25,20 @@ main {
         margin: 50px 0;
         text-align: center;
 
+        p {
+            color: #aaa;
+        }
+
+        &#hello-panel {
+            display: none;
+        }
+
         .panel__info {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin: 20px;
-            background-color: purple;
+            padding: 80px;
 
             .big-checkmark {
                 font-size: 200px;
@@ -27,15 +49,39 @@ main {
                 font-size: 100px;
                 font-weight: 400;
                 letter-spacing: 4px;
+                padding: 10px 0;
             }
 
-            .list-item {
-                display: flex;
+            h2 {
+                font-size: 24px;
+                color: #888;
+                margin-bottom: 20px;
+            }
+
+            .list-grid__container {
+                display: grid;
+                grid-template-columns: 1fr 4fr;
 
                 .small-checkmark {
                     color: green;
+                    font-size: 1.5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end
+                }
+
+                p {
+                    font-size: 1.25rem;
+                    text-align: left;
+                    padding: 10px 0 0 3px;
                 }
             }
+
+        }
+
+        .sounds-good {
+            padding: 20px 0 10px;
+            font-size: 1.25rem;
         }
     }
 }
