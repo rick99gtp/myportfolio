@@ -1,22 +1,19 @@
 header {
     display: flex;
-    justify-content: space-between;
-    padding: 30px 200px;
-    background-color: var(--blue);
+    align-items: center;
+    padding: 20px;
     color: #fff;
-    font-size: 18px;
+    font-size: 30px;
     letter-spacing: 1px;
 
     .header__logo {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
+        line-height: 47px;
     }
 
     nav {
 
         ul {
-            display: flex;
+            display: none;
             list-style: none;
             align-items: center;
 
@@ -57,6 +54,73 @@ header {
 
                     &:hover {
                         background: rgb(0, 145, 0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        justify-content: space-between;
+        padding: 30px 200px;
+        background-color: var(--blue);
+        color: #fff;
+        font-size: 18px;
+        letter-spacing: 1px;
+    
+        .header__logo {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+    
+        nav {
+    
+            ul {
+                display: flex;
+                list-style: none;
+                align-items: center;
+    
+                li {
+                    padding: 0 50px;
+    
+                    p {
+                        position: relative;
+                        display: inline-block;
+                        cursor: pointer;
+    
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            height: 2px;
+                            width: 0%;
+                            bottom: -10px;
+                            background-color: red;
+                            transition: all .2s ease-in-out;
+                        }                    
+    
+                        &:hover {
+    
+                            &::before {
+                                width: 100%;
+                            }
+                        }
+                    }
+    
+                    .header-btn {
+                        padding: 20px 40px;
+                        cursor: pointer;
+                        background-color: green;
+                        color: #fff;
+                        font-size: 20px;
+                        border-radius: 8px;
+                        transition: all .2s ease-in-out;
+    
+                        &:hover {
+                            background: rgb(0, 145, 0);
+                        }
                     }
                 }
             }

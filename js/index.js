@@ -1,16 +1,16 @@
-// set current year for copyright notice in footer
-const copyrightYear = document.getElementById('year')
+// // set current year for copyright notice in footer
+// const copyrightYear = document.getElementById('year')
 
-const d = new Date();
-copyrightYear.textContent = d.getFullYear();
+// const d = new Date();
+// copyrightYear.textContent = d.getFullYear();
 
-// setup all next buttons to increment which screen user is currently viewing
-const btn_next = document.querySelectorAll('.next');
+// // setup all next buttons to increment which screen user is currently viewing
+// const btn_next = document.querySelectorAll('.next');
 
-let currentScreen = 0;
+// let currentScreen = 0;
 
-btn_next.forEach(e => {
-    e.addEventListener('click', () => {
-        currentScreen++;
-    })
-});
+// btn_next.forEach(e => {
+//     e.addEventListener('click', () => {
+//         currentScreen++;
+//     })
+// });
